@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'inner-styles'`, () => {
+  it(`should have as title 'inline-styles'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('inner-styles');
+    expect(app.title).toEqual('inline-styles');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('inner-styles app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('inline-styles app is running!');
   });
 });

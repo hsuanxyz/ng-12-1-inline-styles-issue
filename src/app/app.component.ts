@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styles: [`
+      .content {
+        display: flex;
+      }
+      .extra > a { }
+    `]
 })
 export class AppComponent {
-  title = 'inner-styles';
+  title = 'inline-styles';
 }
